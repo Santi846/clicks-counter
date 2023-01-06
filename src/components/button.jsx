@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-export function Button({button_object, button_click, input }) {
+export function Button({text, is_button_click, manageClick }) {
     return (
         <button 
-        className={ button_click ? 'button_click' : 'button_restart' }
-        onClick={input}
-        >
+        className={ is_button_click ? 'button_click' : 'button_restart' }
+        onClick={manageClick}>  
+        {text}
         </button>
     );
 }

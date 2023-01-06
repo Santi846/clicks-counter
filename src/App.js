@@ -1,20 +1,26 @@
 import './App.css';
-import Kakashi_Purple_Lightning from './images/Kakashi_Purple_Lightning.jpg';
-import { button_object } from './components/props.js';
+import logo from './images/logo_FCC.jpg';
+import { button_click_object, button_restart_object } from './components/props.js';
 import { Button } from './components/button.jsx';
 
 
 function App() {
+  // function manageClick() {
+
+  // }
   return (
     <div className='App'>
       {/* <h1 className='title'>Clicks Counter</h1> */}
-      <div className='background_container'>
-        <img className='background' src={Kakashi_Purple_Lightning} alt='background' />
+      <div className='logo-container'>
+        <img className='logo' src={logo} alt='logo' />
       </div>
       <div className='main_container'>
-        {/* <Button 
-        {...button_object}
-        /> */}
+        <Button
+          {...button_click_object}
+        />
+        <Button 
+          {...button_restart_object}
+        />
       </div>
     </div>
   );
