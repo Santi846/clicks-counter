@@ -16,11 +16,7 @@ function App() {
   
   return (
     <div className='App'>
-      {/* <h1 className='title'>Clicks Counter</h1> */}
-      <div className='logo-container'>
-        <img className='logo' src={logo} alt='logo' />
-      </div>
-      {/* <div className='clicks-counted'></div> */}
+      <h1 className='title'>Clicks Counter</h1>
       <div className='main_container'>
         <Button
           {...button_click_object}

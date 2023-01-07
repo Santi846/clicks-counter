@@ -7,16 +7,6 @@
 }
 
 .title {
-  position: sticky;
-  margin-left: 50%;
-}
-
-.logo {
-  width: 18%;
-  height: 15%;
-   display: flex;
-  /*position: fixed;
-  align-items: center;
-  justify-content: center; */
-  margin-left: 40rem;
+  position: static;
+  margin-left: 1%;
 }
