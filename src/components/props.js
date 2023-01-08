@@ -1,11 +1,13 @@
 // import { manageClick, restartCounter } from '../App.js';
+// import App from '../App';
 
 export const button_click_object = {
     text: 'Click',
-    is_button_click:true,
-    manageClick:function() {
-        console.table('Click');
-    }
+    is_button_click:true
+    // ,
+    // manageClick:function( {setNumClicks, numberClick} ) {
+    //     setNumClicks(numberClick + 1);
+    // }
 };
 
 export const button_restart_object = {
@@ -15,4 +17,8 @@ export const button_restart_object = {
         console.table('From cero');
     }
 };
+
+// export const counter_object = {
+//     numberClick: numberClick
+//     };
 
