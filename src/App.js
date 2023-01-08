@@ -1,7 +1,7 @@
 import './App.css';
-import logo from './images/logo_FCC.jpg';
 import { button_click_object, button_restart_object } from './components/props.js';
 import { Button } from './components/button.jsx';
+import { Counter } from './components/counter.jsx';
 
 // export const manageClick = () => {
 //    console.table('Click');
@@ -18,6 +18,8 @@ function App() {
     <div className='App'>
       <h1 className='title'>Clicks Counter</h1>
       <div className='main_container'>
+        <Counter numberClick='5' 
+        />
         <Button
           {...button_click_object}
         />
