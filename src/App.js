@@ -12,12 +12,12 @@ function App() {
   const manageClick = () => {
    setNumClicks(numberClick + 1);
    console.log('Counting...');
- }
+ };
 
  const restartCounter = () => {
   setNumClicks(0);
   console.log('Start again...');
- }
+ };
     
   
   return (
