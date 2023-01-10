@@ -3,17 +3,21 @@ import { button_click_object, button_restart_object } from './components/props.j
 import { Button } from './components/button.jsx';
 import { Counter } from './components/counter.jsx';
 import React from 'react';
-import { useState } from "react";
+ import { useState } from "react";
 
 function App() {
 
-  // const [numberClick, setNumClicks] = useState(0);
+  const [numberClick, setNumClicks ] = useState(0);
 
- const [numberClick, setNumClicks] = useState(0);
+  const manageClick = () => {
+   setNumClicks(numberClick + 1);
+   console.log('Counting...');
+ }
 
- const manageClick = () => {
-  setNumClicks(numberClick + 1);
-}
+ const restartCounter = () => {
+  setNumClicks(0);
+  console.log('Start again...');
+ }
     
   
   return (
@@ -21,13 +25,16 @@ function App() {
       <h1 className='title'>Clicks Counter</h1>
       <div className='main_container'>
         <Counter 
-        clicks={manageClick.numberClick}
+        numberClick={numberClick}
         />
         <Button
-          {...button_click_object}
+          {...button_click_object}  
+          manageClick={manageClick}
+          
         />
         <Button 
           {...button_restart_object}
+          restartCounter={restartCounter}
         />
       </div>
     </div>
