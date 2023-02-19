@@ -5,18 +5,7 @@ import { Counter } from './components/counter.jsx';
 import React from 'react';
 // import { useState } from "react";
 
-// const [numberClick, setNumClicks ] = useState(0);
-
-//     const manageClick = () => {
-//     setNumClicks(numberClick + 1);
-//     console.log('Counting...');
-//     };
-
-//      const restartCounter = () => {
-//      setNumClicks(0);
-//      console.log('Start again...');
-//     };
-
+//CLASS COMPONENT
 class App extends React.Component {
   constructor(){
     super();
@@ -61,6 +50,7 @@ class App extends React.Component {
   }
 }
 
+//FUNCTION COMPONENT
 // function App() {
 
   //Hooks//
